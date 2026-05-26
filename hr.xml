@@ -1,0 +1,98 @@
+<hr xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schema/hr.xsd">
+
+    <regions>
+        <region region_id="1">
+            <region_name>America</region_name>
+        </region>
+        <region region_id="2">
+            <region_name>Europa</region_name>
+        </region>
+    </regions>
+
+    <countries>
+        <country country_id="COL">
+            <country_name>Colombia</country_name>
+            <region_id>1</region_id>
+        </country>
+        <country country_id="ESP">
+            <country_name>España</country_name>
+            <region_id>2</region_id>
+        </country>
+    </countries>
+
+    <locations>
+        <location location_id="0001">
+            <street_address>Calle 85 # 21-85</street_address>
+            <postal_code>110221</postal_code>
+            <city>Bogotá</city>
+            <country_id>COL</country_id>
+        </location>
+        <location location_id="0002">
+            <street_address>Calle San Bernardo, 2</street_address>
+            <postal_code>28013</postal_code>
+            <city>Madrid</city>
+            <state_province>Madrid</state_province>
+            <country_id>ESP</country_id>
+        </location>
+    </locations>
+
+    <jobs>
+        <job job_id="AD_Dir">
+            <job_title>Director</job_title>
+            <min_salary>20000000</min_salary>
+            <max_salary>40000000</max_salary>
+        </job>
+        <job job_id="IT_Field">
+            <job_title>Field Support Analyst</job_title>
+            <min_salary>2100000</min_salary>
+            <max_salary>5200000</max_salary>
+        </job>
+    </jobs>
+
+    <departments>
+        <department department_id="01">
+            <department_name>Administrativo</department_name>
+            <manager_id>001</manager_id>
+            <location_id>0002</location_id>
+        </department>
+        <department department_id="02">
+            <department_name>IT</department_name>
+            <manager_id>001</manager_id>
+            <location_id>0001</location_id>
+        </department>
+    </departments>
+
+    <employees>
+        <employee employee_id="001">
+            <first_name>Alejandra</first_name>
+            <last_name>Valbuena</last_name>
+            <email>avalbuena@gmail.com</email>
+            <phone_number>3124297851</phone_number>
+            <hire_date>2015-06-17</hire_date>
+            <job_id>AD_Dir</job_id>
+            <salary>30000000</salary>
+            <commission_pct>0.00</commission_pct>
+            <department_id>01</department_id>
+        </employee>
+        <employee employee_id="002">
+            <first_name>Victor</first_name>
+            <last_name>Reinosa</last_name>
+            <email>vreinosa@gmail.com</email>
+            <phone_number>3214569512</phone_number>
+            <hire_date>2020-01-03</hire_date>
+            <job_id>IT_Field</job_id>
+            <salary>3000000</salary>
+            <commission_pct>0.10</commission_pct>
+            <manager_id>001</manager_id>
+            <department_id>02</department_id>
+        </employee>
+    </employees>
+
+    <job_histories>
+        <job_history employee_id="002" start_date="2016-03-01">
+            <end_date>2020-01-02</end_date>
+            <job_id>IT_Field</job_id>
+            <department_id>02</department_id>
+        </job_history>
+    </job_histories>
+</hr>
